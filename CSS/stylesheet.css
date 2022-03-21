@@ -10,10 +10,6 @@ header {
     font-weight: bold;
 }
 
-#title-container{
-    background-color: black;
-    opacity: 0.5;
-}
 
 #menu-bar {
     display: flex;
@@ -49,12 +45,26 @@ body {
     background-position: center center;
     padding-bottom: 60px;
     margin: 0%;
+    color: white;
 }
 
 
 footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+footer::before {
+    clear: both;
+    display: block;
+    height: 120px;
+    min-height: 120px;
+}
+
+#footer {
+    background-color: white;
 }
 
 #footer-menu {
@@ -63,11 +73,49 @@ footer {
     list-style: none;
 }
 
+#footer-menu li a {
+    text-decoration: none;
+}
 
+/* Git Hub */
+.fa-github {
+    background: #171515;
+    color: white;
+}
 
+/* LinkedIn */
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
 
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+body img {
+    width: 400px;
+    height: auto;
+}
 
 /*Homepage Specific*/
+
+#home-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#home-main section {
+    width: 400px;
+
+}
+
+
 
 #email-icon {
     width: 15px;
@@ -77,8 +125,8 @@ footer {
 
 #hp-photo {
     display: flex;
-
-    width: 60%;
+    float: left;
+    width: 400px;
     height: auto;
 
     border-radius: 50%;
@@ -88,4 +136,34 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* Blog Page */
+.blog-pic {
+    width: 400px;
+    height: auto;
+}
+.blog-link {
+    color: aquamarine;
+}
+
+/* About Me */
+#about-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about-main section {
+    width: 400px;
+}
+#about-main div {
+
+}
+
+/* Past Work */
+.cv-icon {
+    width: 100px;
+    height: auto;
 }
