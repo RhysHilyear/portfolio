@@ -1,0 +1,239 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    padding-left: 3px;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#title-container {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#menu-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 3vw;
+    font-size: 5vw;
+    list-style-type: none;
+    margin: 0;
+    
+    padding: 1vw;
+}
+
+#menu-bar li a {
+    display: block;
+    flex-basis: auto;
+    width: 21vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-image: url(../images/galaxy-button.png);
+    background-position: center center;
+}
+
+body {
+    background-image: url(../images/galaxy-background.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0%;
+    color: white;
+}
+
+main {
+    background-color: rgba(0,0,0,0.5);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0%;
+    padding-bottom: 1%;
+}
+footer::before {
+    clear: both;
+    display: block;
+    height: 120px;
+    min-height: 120px;
+}
+
+#footer {
+    background-color: white;
+}
+
+#footer-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+#footer-menu li a {
+    text-decoration: none;
+}
+
+/* Git Hub */
+.fa-github {
+    background: #171515;
+    color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+body img {
+    width: 400px;
+    height: auto;
+}
+
+/*Homepage Specific*/
+
+#home-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#email-icon {
+    width: 15px;
+    height: auto;
+    display: flex;
+}
+
+#hp-photo {
+    display: flex;
+    float: left;
+    width: 380px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+#home-main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Blog Page */
+#blog-title {
+margin: auto;
+text-align: center;
+}
+
+.blog-pic {
+    width: 400px;
+    height: auto;
+}
+
+.blog-link {
+    color: aquamarine;
+}
+
+#blog-main section {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    align-content: center;
+    border: 2px sold red;
+    padding: 5px;
+}
+
+/* About Me */
+#about-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#about-main section {
+    width: 400px;
+}
+
+
+/* Past Work */
+.cv-icon {
+    width: 100px;
+    height: auto;
+    background-color: black;
+}
+
+#cv-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#work-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#job-text {
+    width: 45%;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    #hp-photo {
+        width: 80vw;
+    }    
+    .blog-pic {
+        width: 80vw;
+    }
+    #blog-main section {
+        margin: 5%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px){
+    
+    #menu-bar li a {
+        width: 18vw;
+        height: auto;
+        font-size: 4vw;
+    }
+}
